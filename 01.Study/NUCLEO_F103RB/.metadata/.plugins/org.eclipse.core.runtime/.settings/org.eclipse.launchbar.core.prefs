@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:USART_printf Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_Blink Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_Blink_F103RB,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:USART_printf_F103RB Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EXTI,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TIM_TimeBase,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TemperatureSensor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:WWDG Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TemperatureSensor\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_TemperatureSensor\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EXTI/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EXTI/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_Blink\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:LED_Blink\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:USART_printf\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:USART_printf\ Debug/activeLaunchTarget=null\:---

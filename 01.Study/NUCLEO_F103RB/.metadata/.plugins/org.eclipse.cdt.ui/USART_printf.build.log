@@ -1,0 +1,19 @@
+14:56:11 **** Build of configuration Debug for project USART_printf ****
+make -j16 all 
+arm-none-eabi-gcc -o "USART_printf.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\study\STM32\01.Study\NUCLEO_F429ZI\USART_printf\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USART_printf.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: USART_printf.elf
+ 
+arm-none-eabi-objdump -h -S  USART_printf.elf  > "USART_printf.list"
+arm-none-eabi-objcopy  -O binary  USART_printf.elf  "USART_printf.bin"
+arm-none-eabi-size   USART_printf.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12560	     20	   2740	  15320	   3bd8	USART_printf.elf
+Finished building: default.size.stdout
+ 
+Finished building: USART_printf.bin
+ 
+Finished building: USART_printf.list
+ 
+
+14:56:13 Build Finished. 0 errors, 0 warnings. (took 1s.32ms)
+

@@ -1,0 +1,36 @@
+19:39:38 **** Incremental Build of configuration Debug for project ADC_TemperatureSensor ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '__io_putchar':
+../Core/Src/main.c:77:2: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   77 |  if(ch == '\n')
+      |  ^~
+../Core/Src/main.c:79:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   79 |   HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
+      |   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:138:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  138 |    printf("temperature : %d, %f \n", adc1, temp);
+      |    ^~~~~~
+../Core/Src/main.c:138:4: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "main.h"
+  +++ |+#include <stdio.h>
+   22 | 
+arm-none-eabi-gcc -o "ADC_TemperatureSensor.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32CubeIDE\workspace\ADC_TemperatureSensor\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_TemperatureSensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_TemperatureSensor.elf
+ 
+arm-none-eabi-objdump -h -S  ADC_TemperatureSensor.elf  > "ADC_TemperatureSensor.list"
+arm-none-eabi-objcopy  -O binary  ADC_TemperatureSensor.elf  "ADC_TemperatureSensor.bin"
+arm-none-eabi-size   ADC_TemperatureSensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25516	    484	   1716	  27716	   6c44	ADC_TemperatureSensor.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_TemperatureSensor.bin
+Finished building: ADC_TemperatureSensor.list
+ 
+ 
+
+19:39:39 Build Finished. 0 errors, 3 warnings. (took 967ms)
+
